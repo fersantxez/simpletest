@@ -13,14 +13,16 @@ This image is INSECURE and should NOT be used in production. It has root access 
 
 #Testing examples
 
-- iperf
+- iperf:
+
   On server:
      ``` iperf -s -p [port_number] (-u) ```
      where (-u) activates UDP testing, which is TCP by default.
   On client:
      ``` iperf -i [interval] -t [time] -p [port_number] (-u) -c [remote_server_address] ```
 
-- netperf
+- netperf:
+
   On server:
      ``` netserver -p [port_number] -L [my_local_server_address] ```
   On client: 
@@ -31,6 +33,7 @@ This image is INSECURE and should NOT be used in production. It has root access 
      - SCTP_STREAM
      - etc.
 
-- nmap
+- nmap:
+
   On client:
      ``` nmap [server_address] ```
