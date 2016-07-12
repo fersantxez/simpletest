@@ -23,6 +23,14 @@ if [ ! -e ~/.ssh/authorized_keys ]; then
   echo "WARNING: No SSH authorized_keys found for root"
 fi
 
+#start server on $PORT0 if defined
+if [ -n "$PORT0" ]; then
+    echo "PORT0 is defined as "$PORT0
+    echo "Port "$PORT0 >> /etc/ssh/sshd_config
+else
+    echo "PORT0 is undefined. Starting on port 22.";
+fi
+
 stop() {
     echo "Received SIGINT or SIGTERM. Shutting down $DAEMON"
     # Get PID
