@@ -21,11 +21,11 @@ fi
 # Warn if no config
 if [ ! -e ~/.ssh/authorized_keys ]; then
   echo "WARNING: No SSH authorized_keys found for root, using default"
-  echo -e "deleteme\ndeleteme" | passwd root
+  #echo -e "deleteme\ndeleteme" | passwd root
 fi
 
-#enable root login
-echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+#enable root login and password authentication
+#echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
 
 #start server on $PORT0 if defined
