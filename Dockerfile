@@ -10,7 +10,7 @@ ENV WEB_PORT=80
 ENV IPERF_TCP_PORT=5001
 ENV NETPERF_TCP_PORT=6001
 
-RUN apk add --update curl build-base bash iperf nmap nginx openssh rsync tcpdump tshark && \
+RUN apk add --update curl build-base bash iperf nmap nginx openssh rsync tcpdump tshark iftop iptraf-ng && \
 #get netperf
   curl -LO ftp://ftp.netperf.org/netperf/netperf-2.7.0.tar.gz && \
   tar -xzf netperf-2.7.0.tar.gz  && \
