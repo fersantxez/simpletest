@@ -5,7 +5,7 @@ Network tester. Launches iperf and netperf servers on known ports. Offers iperf,
 Based on Alpine linux for minimal footprint.
 
 #Disclaimer
-This image is INSECURE and should NOT be used in production. It has root access with a default password enabled. 
+This image is INSECURE and should NOT be used in production. It has ssh access with a default password enabled. 
 
 #Usage
 
