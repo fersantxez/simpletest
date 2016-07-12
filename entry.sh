@@ -20,7 +20,8 @@ fi
 
 # Warn if no config
 if [ ! -e ~/.ssh/authorized_keys ]; then
-  echo "WARNING: No SSH authorized_keys found for root"
+  echo "WARNING: No SSH authorized_keys found for root, using default"
+  echo "deleteme\ndeleteme" | passwd root
 fi
 
 #start server on $PORT0 if defined
