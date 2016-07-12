@@ -1,6 +1,6 @@
 # simpletest
 
-Network tester. Launches iperf and netperf servers on known ports. Offers iperf, netperf, nmap and simple web server services for network testing.
+Network tester. Launches a listening server on $PORT0 (if defined) or defaults to port 22. Offers iperf, netperf, nmap and simple web server services for network testing.
 
 Based on Alpine linux for minimal footprint.
 
